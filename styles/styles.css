@@ -1,0 +1,142 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: rgb(208, 75, 18);
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    object-fit: contain;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+a.active, a:hover {
+    color: rgb(29, 25, 25);
+}
+
+.burger-menu {
+    display: none;
+}
+
+.burger-menu label {
+    cursor: pointer;
+    display: none;
+    font-size: 24px;
+}
+
+.burger-menu ul {
+    display: flex;
+}
+
+.burger-menu ul li {
+    margin: 0 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    .burger-menu label {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(208, 75, 18);
+        text-align: center;
+        z-index: 1;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.msp-slogan {
+    text-align: center;
+    margin: 20px 0;
+    color: rgb(208, 75, 18);
+}
+
+.text-section {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.text1 {
+    line-height: 1.6;
+    color: #333;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: rgb(208, 75, 18);
+    padding: 20px;
+    text-align: center;
+}
+
+.dev-name {
+    color: white;
+}
